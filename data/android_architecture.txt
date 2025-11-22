@@ -1,0 +1,43 @@
+Modern Android applications should follow scalable and maintainable architecture patterns.
+
+Core architectural principles:
+- MVVM (Model-View-ViewModel) is the recommended pattern for separation of concerns.
+- Use of Clean Architecture layers: data, domain, and presentation.
+- Repository pattern for data abstraction.
+- Use of Jetpack Architecture Components: ViewModel, LiveData, Room, and Navigation.
+- Applying dependency injection using Hilt or Dagger to manage class dependencies efficiently.
+- Using UseCases or Interactors in domain layer to encapsulate business logic.
+- Proper handling of asynchronous data streams with Kotlin Flow or LiveData.
+- Single Source of Truth principle for consistent state management.
+- Reactive UI with Jetpack Compose or XML View Binding.
+- Error handling and result wrapping (e.g., Result<T> pattern).
+
+Data layer guidelines:
+- Separate data sources: RemoteDataSource (e.g., Retrofit), LocalDataSource (Room), InMemoryCache.
+- Repository orchestrates sources, exposes suspend functions / Flows returning domain models.
+- DTOs mapped to domain models via dedicated mapper classes to avoid leaking transport schema.
+- Room entities separate from network DTOs; never expose them to UI directly.
+- Use paging (Paging 3) for large lists; integrate with Flow for reactive streams.
+- Cache strategy: write-through (update cache after remote success), time-based eviction, stale-while-revalidate.
+- Offline support: serve cached data first, enqueue failed mutations for retry (WorkManager).
+- Concurrency: prefer structured coroutines + Flow operators (map, combine, catch, retry).
+- Error handling: wrap results in sealed types (Success, Error, Loading) or Kotlin Result + extension helpers.
+- Security: validate and sanitize inputs before persistence; avoid exposing raw error messages.
+- Testing: replace data sources with fakes; use in-memory Room; assert mapping correctness.
+
+Example repository interface:
+interface UserRepository {
+    fun observeUsers(): Flow<List<User>>
+    suspend fun refreshUsers(): Result<Unit>
+    suspend fun getUser(id: String): Result<User>
+    suspend fun createUser(newUser: NewUser): Result<User>
+}
+
+Example sealed result:
+sealed interface LoadState<out T> {
+    data class Success<T>(val data: T): LoadState<T>
+    data class Error(val throwable: Throwable): LoadState<Nothing>
+    object Loading: LoadState<Nothing>
+}
+
+An experienced Android architect ensures scalability, testability, and clean separation between layers.

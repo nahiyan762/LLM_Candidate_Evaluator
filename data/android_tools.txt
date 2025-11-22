@@ -1,0 +1,29 @@
+A senior Android developer should be familiar with the ecosystem tools and services used for building, testing, and deploying Android applications.
+Advanced competencies include familiarity with:
+- Build optimizers and shrinkers (R8, ProGuard) and obfuscation mapping management.
+- Alternative build systems for large mono-repos (Bazel, Buck) and Gradle configuration caching.
+- Performance and trace tools (Perfetto, Systrace, Android Studio Energy & Memory profiling, Baseline Profiles).
+- Testing stack: JUnit5, Espresso, UI Automator, Robolectric, MockK/Mockito, Ktlint pre-commit hooks, Test Orchestrator, Firebase Test Lab, Snapshot/Golden testing.
+- Architecture and quality enforcement via custom Gradle plugins and convention plugins.
+- Dependency and security scanning (OWASP Dependency-Check, Snyk) plus license compliance tooling.
+- Release stream management (Internal App Sharing, Play tracks: internal, alpha, beta, staged rollout) and Play Integrity / SafetyNet.
+- Feature flag & remote experimentation platforms (LaunchDarkly, Firebase Remote Config, Optimizely).
+- Observability pipeline integration (OpenTelemetry exporters, structured logging, ANR analysis).
+- Benchmarking (Jetpack Macrobenchmark, Startup profiling) and cold/warm launch optimization.
+- Automated code formatting and lint gates in CI (Spotless, Detekt, Ktlint) with quality thresholds.
+- Secrets and config handling (Gradle local properties, encrypted files, Vault / AWS KMS).
+- Multimodule dependency graph visualization and build time analytics (Gradle Build Scan).
+- Containerized reproducible builds (Docker + Gradle, remote build cache, ephemeral CI agents).
+Common tools and technologies:
+- Android Studio as the main IDE, using features like Layout Inspector, Profiler, and Logcat.
+- Gradle for build automation, dependency management, and modularization.
+- Git and GitHub or GitLab for version control and collaboration.
+- CI/CD tools such as GitHub Actions, Bitrise, Jenkins, or CircleCI for continuous integration and deployment.
+- Firebase for analytics, crash reporting, remote config, and push notifications.
+- Google Play Console for app release management and user feedback analysis.
+- Code review and static analysis tools like Detekt, Lint, and SonarQube.
+- Emulator and real device testing through Android Debug Bridge (ADB).
+- Containerization or automation familiarity (e.g., Docker, Fastlane) for build pipelines.
+- Monitoring tools like Firebase Crashlytics, Sentry, or New Relic for post-deployment performance tracking.
+
+Proficiency with these tools reflects a developer’s readiness for large-scale Android projects.

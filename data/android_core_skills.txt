@@ -1,0 +1,36 @@
+A strong Android developer must have deep understanding of the Android SDK, Kotlin programming language, and Android application lifecycle.
+
+Core technical areas include:
+- Proficiency in Kotlin and Java, with a preference for Kotlin as the modern Android standard.
+- Understanding of Android components such as Activities, Fragments, Services, Broadcast Receivers, and Content Providers.
+- Knowledge of UI design using XML layouts and Jetpack Compose for declarative UI development.
+- Strong understanding of asynchronous programming using Kotlin Coroutines and Flow.
+- Efficient memory and performance management, especially handling background threads and avoiding memory leaks.
+- Experience with networking using Retrofit, OkHttp, and RESTful APIs.
+- Data persistence using Room database, SharedPreferences, and DataStore.
+- Familiarity with Android Jetpack libraries such as LiveData, ViewModel, Navigation, and WorkManager.
+- Testing fundamentals with JUnit, Espresso, and MockK.
+- Familiarity with dependency injection using Hilt or Dagger.
+- Understanding Gradle build system, app signing, and versioning.
+
+Good developers write clean, modular, and maintainable code following best practices and SOLID principles.
+
+Additional competencies:
+- Architecture patterns: MVVM, MVI, Clean Architecture, modularization.
+- Jetpack Compose state management and performance optimization.
+- Performance profiling with Android Studio (CPU, Memory, Network, Startup).
+- App security: encryption, secure storage, certificate pinning, Play Integrity API.
+- Accessibility: content descriptions, dynamic font sizes, TalkBack support.
+- Internationalization and localization best practices.
+- Offline-first design and syncing strategies.
+- WorkManager and foreground services for reliable background work.
+- Play Store compliance: policies, release tracks, in-app updates.
+- Crash and analytics tools: Firebase Crashlytics, Analytics.
+- CI/CD: Gradle tasks, fastlane, GitHub Actions.
+- Code quality: static analysis (Detekt, Ktlint), lint, baseline profiles.
+- ProGuard/R8 optimization and resources shrinking.
+- Handling large lists efficiently (Paging 3, DiffUtil).
+- Advanced testing: instrumentation, snapshot tests, coroutine test dispatchers.
+- Feature flags and remote config.
+- Dependency management and version catalogs.
+- Kotlin Multiplatform basics (sharing logic across platforms).

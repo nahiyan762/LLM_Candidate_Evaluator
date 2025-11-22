@@ -1,0 +1,77 @@
+Senior Engineer Expectations
+
+1. Technical Excellence
+- Consistently delivers high-quality, maintainable, performant code.
+- Evaluates trade-offs (complexity vs value) before implementation.
+- Owns root-cause analysis and drives systemic fixes.
+
+2. Architecture & Design
+- Designs scalable, secure, extensible systems with clear boundaries.
+- Communicates design via concise artifacts (ADR, diagrams, rationale).
+- Anticipates future requirements and minimizes accidental complexity.
+
+3. Execution & Ownership
+- Breaks ambiguous problems into actionable milestones.
+- Unblocks team by identifying risks early and proposing mitigation.
+- Treats operational health (latency, errors, cost) as a first-class concern.
+
+4. Code & Review Practices
+- Raises code quality through constructive, specific feedback.
+- Enforces clarity: naming, cohesion, minimal side effects.
+- Champions automated testing, observability, and deployment safety.
+
+5. Mentorship & Growth
+- Proactively levels up teammates through pairing and knowledge sharing.
+- Provides actionable, timely, respectful feedback.
+- Amplifies juniors: delegates, supports, and celebrates progress.
+
+6. Communication
+- Tailors depth to audience (exec, PM, peer, junior).
+- Surfaces bad news early with options, impact, recommendation.
+- Writes crisp summaries: problem, constraints, options, decision.
+
+7. Cross-Functional Collaboration
+- Aligns with product on outcomes, not just outputs.
+- Clarifies scope, edge cases, and acceptance criteria.
+- Balances technical purity with business priorities.
+
+8. Strategic Impact
+- Identifies leverage points: platform investments, automation, reuse.
+- Influences roadmap with data (metrics, benchmarks, user impact).
+- Connects daily work to company objectives.
+
+9. Reliability & Operations
+- Designs for graceful degradation and rapid recovery.
+- Sets and defends SLOs; uses telemetry to guide improvements.
+- Drives postmortems to actionable learnings (prevention over blame).
+
+10. Security & Compliance
+- Integrates secure-by-default patterns (least privilege, validation).
+- Flags and remediates security risks before launch.
+- Champions privacy and responsible data handling.
+
+11. Continuous Improvement
+- Measures outcomes; retires obsolete processes and code.
+- Introduces tools/practices that reduce toil.
+- Iterates based on feedback, metrics, and retrospectives.
+
+12. Professionalism
+- Maintains calm under pressure; models integrity.
+- Prioritizes inclusivity and psychological safety.
+- Owns mistakes publicly; shares credit generously.
+
+Definition of Ready (for Senior-led initiatives)
+- Clear problem statement and success metrics.
+- Stakeholders aligned on scope and constraints.
+- Risks, assumptions, and dependencies enumerated.
+
+Definition of Done (for Senior-led deliverables)
+- Meets functional and non-functional requirements.
+- Observability, alerts, documentation, and tests in place.
+- Deployment validated; rollback plan confirmed.
+- Post-launch review scheduled with metrics baseline.
+
+Growth Signals (toward Staff level)
+- Drives multi-team alignment on strategy.
+- Creates reusable platforms accelerating multiple roadmaps.
+- Shapes technical standards adopted org-wide.

@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - API_BASE_URL=http://host.docker.internal:8000/evaluate-candidate
+    command: uvicorn demo:app --host 0.0.0.0 --port 8000
